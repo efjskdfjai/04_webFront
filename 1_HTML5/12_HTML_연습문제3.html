@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12_HTML_연습문제3</title>
+  <style>
+    .input_information {}
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>회원 가입</h1>
+  </div>
+
+  <div class="input_information">
+
+    <fieldset>
+
+      <legend>필수 입력 정보</legend>
+
+      <strong>
+        ID
+        <input type="id" placeholder="아이디 10글자 이내">
+        <button>중복 확인</button> <br>
+
+        비밀번호
+        <input type="password" placeholder="영문,숫자,특수문자 포함 8자 이상"> <br>
+
+        비밀번호 확인
+        <input type="password"> <br>
+
+        <form>
+          Email :
+          <input type="email">
+          <select type="name">
+            <option>직접입력</option>
+
+          </select>
+
+        </form>
+
+      </strong>
+
+    </fieldset>
+
+  </div>
+
+  <div class="input_details">
+    <fieldset>
+
+      <legend>추가 정보</legend>
+      프로필 사진 <input type="file"> <br> <br>
+      성별 : <input type="radio" name="gender" id="male"> 남자
+      <input type="radio" name="gender" id="male"> 여자 <br> <br>
+      생년월일 : <input type="date"> <br> <br>
+      취미 <br>
+      <input type="checkbox"> 야구
+      <input type="checkbox"> 농구
+      <input type="checkbox"> 축구 <br>
+
+      <input type="checkbox"> 공부
+      <input type="checkbox"> 음악감상 <br>
+
+      <input type="checkbox"> 기타
+      <input type="text"> <br> <br>
+
+      자기소개 <br>
+      <textarea rows="10" cols="70" style="resize: none"></textarea>
+
+    </fieldset>
+  </div>
+
+  <br>
+
+  <div class="button">
+    <button>회원가입</button>
+    <button>다시입력</button>
+    <button>이전으로</button>
+  </div>
+
+</body>
+
+</html>

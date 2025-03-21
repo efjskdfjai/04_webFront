@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10_HTML연습문제1</title>
+</head>
+
+<body>
+
+  <div class="text_box">
+    고객명 : <input type="text"> <br> <br>
+    전화번호 : <input type="tel"> <br> <br>
+    E-mail : <input type="email"> <br>
+  </div>
+
+  <br>
+
+  <div class="pizza">
+
+    <form>
+      피자선택 : <select type="name">
+        <option>피자를 선택하세요</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+      </select>
+
+      <fieldset>
+        <legend>피자 사이즈</legend>
+        <label for="male">
+          <input type="radio" name="pizza" id="male"> Small <br> <br>
+          <input type="radio" name="pizza" id="male"> Medium <br> <br>
+          <input type="radio" name="pizza" id="male"> Large <br> <br>
+        </label>
+      </fieldset>
+
+    </form>
+
+  </div>
+
+  <br>
+
+  <div class="pizza_topping">
+    <form>
+
+      <fieldset>
+        <legend>토핑 선택</legend>
+        <label for="male">
+          <input type="checkbox" name="pizza_topping"> 베이컨 <br> <br>
+          <input type="checkbox" name="pizza_topping"> 치즈 <br> <br>
+          <input type="checkbox" name="pizza_topping"> 양파 <br> <br>
+          <input type="checkbox" name="pizza_topping"> 버섯 <br> <br>
+        </label>
+      </fieldset>
+
+    </form>
+
+  </div>
+
+  <br>
+
+  <div class="date">
+    희망배송시간 <input type="time">
+  </div>
+
+  <br>
+
+  <div class="requested_term">
+    배송시 요청사항 <textarea rows="4" cols="20" ></textarea> <br> <br>
+    <button>주문하기</button>
+  </div>
+
+</body>
+
+</html>
