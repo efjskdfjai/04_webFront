@@ -6,28 +6,103 @@ CSS 파일
 /* 기본 속성 선택자 */
 
 div[name="name-1"] {
-    background-color: red;
+  background-color: red;
 }
 
 p[name="name-1"] {
-    background-color: gray;
+  background-color: gray;
 }
 
 [name="name-2"] {
-    background-color: black;
+  background-color: black;
 }
 
 /* 자식 선택자 */
-#parent-ul > li {
-    background-color: orange;
+#parent-ul>li {
+  background-color: orange;
 }
 
-#parent-ul > li > span {
-    background-color: red;
+#parent-ul>li>span {
+  background-color: red;
 }
 
 /* 후손 선택자 */
 
 #test-div p {
-    background-color: yellow;
+  background-color: yellow;
+}
+
+/* 반응 선택자 */
+.div-cls {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+
+  /* 아래쪽 요소와의 간격
+    == 아래쪽 여백을 30px 지정
+  */
+  margin-bottom : 30px;
+
+/* 요소에 마우스커서가 올라가면
+    손가락 모양으로 변경
+*/
+
+  cursor : pointer;
+}
+
+#active-test:active {
+  background-color:yellow;
+}
+
+#hover-test:hover{
+  background-color: pink;
+}
+
+#hover-test:hover {
+  background-color: pink;
+  width: 230px;
+  height: 230px;
+}
+
+#hover-test {
+  /* #hover-test 요소가 변화를 일으키면 0.5초동안 변해라
+  
+    트랜지션(trasition) : HTML 요소가
+    한 상태에서 다른 상태로 변할 떄의
+    변화를 부드럽게 만들어주는 애니메이션 효과
+    정신적으로 몇 초에 걸쳐 변화해라
+  */
+
+  transition-duration: 0.5s;
+}
+
+/* 상태 선택자 */
+#focus-test:focus {
+  background-color: red;
+}
+
+input[name="frutes"]:checked {
+  width: 30px;
+  height: 30px;
+
+  /* radio checkbox는 크기를 제외한 스타일 적용되지 않는다 */
+  background-color: red;
+}
+
+#test-div2 > input:enabled {
+  background-color: skyblue;
+}
+
+#test-div2 > input:disabled {
+  background-color: aqua;
+}
+
+/* 동위 선택자 */
+#div1 + div {
+  background-color: olive;
+}
+
+#div3 ~ div {
+  background-color: blue00000000000000000;
 }
