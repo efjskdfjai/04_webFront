@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-1 {
+  display: flex;
+}
+
+.header-2 {
+  display: flex;
+}
+
+.header-3 {
+  display: flex;
+}
+
+.section-icon>img {
+  width: 2.5%;
+}
+
+.Youtube_logo>a>img {
+  width: 12%;
+}
+
+img {
+  cursor: pointer;
+}
+
+.search-bar>input {
+  position: relative;
+  width: 350px;
+  height: 40px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+}
+
+.search-bar>.rectangle {
+  position: absolute;
+  top: 86px;
+  left: 290px;
+  width: 60px;
+  height: 40px;
+  border-top-right-radius: 20px;
+  border-end-end-radius: 20px;
+  border: 1px solid gainsboro;
+  background-color: whitesmoke;
+}
+
+.search-bar-icon>div>img {
+  position: absolute;
+  top: 90px;
+  right: 675px;
+  width: 24px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.search-bar-icon>img {
+  position: absolute;
+  top: 93px;
+  left: 305px;
+}
+
+.voice-icon {
+  width: 28px;
+  border-radius: 100%;
+}
+
+.create-button {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.notification-icon>img {
+  width: 35px;
+  cursor: pointer;
+}
+
+.profile-icon>img {
+  width: 50px;
+}
